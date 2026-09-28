@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211d1a">
+  <meta name="description" content="Архитектурная мастерская Благолепский: гипсовая лепнина и изделия на заказ в Санкт-Петербурге.">
+  <title>Архитектурная мастерская Благолепский</title>
+  <style>
+    :root {
+      --dark: #211d1a;
+      --cream: #f5f0e7;
+      --paper: #fffdf8;
+      --gold: #987344;
+      --text: #342e29;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--text); font: 16px/1.6 Georgia, "Times New Roman", serif; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+    header { background: var(--dark); color: var(--paper); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 18px; }
+    .brand { font-size: 20px; line-height: 1.15; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+    nav a { text-decoration: none; }
+    nav a:hover, nav a:focus-visible { color: #dec89c; }
+    .hero { background: var(--dark); color: var(--paper); }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; padding-block: 70px; }
+    .eyebrow { color: #c7a873; letter-spacing: .16em; text-transform: uppercase; font: 12px/1.5 Arial, sans-serif; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 700px; font-size: clamp(38px, 5vw, 70px); line-height: 1.08; font-weight: normal; }
+    h2 { font-size: clamp(30px, 3.6vw, 46px); line-height: 1.2; font-weight: normal; }
+    h3 { font-size: 23px; font-weight: normal; }
+    .lead { max-width: 570px; font-size: 20px; color: #e1d9cd; }
+    .button { display: inline-block; padding: 12px 22px; background: #c9ac79; color: var(--dark); text-decoration: none; font: 600 15px/1.4 Arial, sans-serif; }
+    .button:hover, .button:focus-visible { background: #e1c99e; }
+    .hero-image { width: 100%; max-height: 570px; object-fit: cover; border: 1px solid #685644; }
+    section { padding-block: 76px; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .about-image { width: 100%; max-height: 520px; object-fit: contain; background: #e9e0ce; }
+    .services { background: var(--paper); }
+    .cards, .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card, .work { padding: 24px; background: var(--cream); }
+    .card p, .work p { margin-bottom: 0; }
+    .work { padding: 0 0 22px; overflow: hidden; }
+    .work img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #e9e0ce; }
+    .work h3, .work p { margin: 16px 20px 0; }
+    .muted { color: #665c52; }
+    .contacts { background: var(--dark); color: var(--paper); }
+    .contacts p { color: #e1d9cd; }
+    footer { padding-block: 24px; background: #171411; color: #cfc3b2; }
+    @media (max-width: 750px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .hero-grid, .about { grid-template-columns: 1fr; gap: 30px; }
+      .hero-grid { padding-block: 48px; }
+      .cards, .gallery { grid-template-columns: 1fr; }
+      section { padding-block: 54px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Мастерская<br>Благолепский</a>
+      <nav aria-label="Основная навигация">
+        <a href="#about">О мастерской</a>
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Санкт-Петербург · Гипсовая лепнина</p>
+          <h1>Архитектурная мастерская Благолепский</h1>
+          <p class="lead">Лепные изделия для интерьеров, в которых важна каждая деталь.</p>
+          <a class="button" href="#works">Посмотреть работы</a>
+        </div>
+        <img class="hero-image" src="main.jpg" alt="Фирменный образ мастерской Благолепский">
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">О мастерской</p>
+          <h2>Форма, характер, внимание к деталям</h2>
+          <p>Создаём лепные гипсовые изделия для частных и общественных пространств. Работаем с декоративными элементами и индивидуальными задумками.</p>
+          <p class="muted">Этот текст — первый вариант. Позже дополним его вашей историей и подходом к работе.</p>
+        </div>
+        <img class="about-image" src="sign.jpg" alt="Фирменный знак мастерской Благолепский" loading="lazy">
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <p class="eyebrow">Чем занимаемся</p>
+        <h2>Услуги мастерской</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Гипсовая лепнина</h3>
+            <p>Декоративные элементы для оформления интерьеров.</p>
+          </article>
+          <article class="card">
+            <h3>Изделия на заказ</h3>
+            <p>Работа над формой и деталями под конкретный проект.</p>
+          </article>
+          <article class="card">
+            <h3>Реставрация</h3>
+            <p>Работы с существующими лепными элементами.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="wrap">
+        <p class="eyebrow">Портфолио</p>
+        <h2>Наши работы</h2>
+        <div class="gallery" id="gallery" aria-live="polite"></div>
+        <p class="muted" id="gallery-status">Загружаем галерею…</p>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="wrap">
+        <p class="eyebrow">Связаться с нами</p>
+        <h2>Расскажите о вашей задумке</h2>
+        <p>Санкт-Петербург<br>Телефон: <a href="tel:+79219042233">+7 921-904-22-33</a></p>
+        <a class="button" href="tel:+79219042233">Позвонить</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© Архитектурная мастерская Благолепский</div>
+  </footer>
+
+  <script>
+    async function loadGallery() {
+      const gallery = document.querySelector("#gallery");
+      const status = document.querySelector("#gallery-status");
+
+      try {
+        const response = await fetch("gallery.json");
+        if (!response.ok) throw new Error("Не удалось загрузить gallery.json");
+
+        const works = await response.json();
+        if (!Array.isArray(works)) throw new Error("Неверный формат галереи");
+
+        if (works.length === 0) {
+          status.textContent = "Скоро здесь появятся фотографии наших работ.";
+          return;
+        }
+
+        for (const work of works) {
+          const card = document.createElement("article");
+          card.className = "work";
+
+          const image = document.createElement("img");
+          image.src = work.image;
+          image.alt = work.title || "Работа мастерской";
+          image.loading = "lazy";
+
+          const title = document.createElement("h3");
+          title.textContent = work.title || "Без названия";
+
+          const description = document.createElement("p");
+          description.textContent = work.description || "";
+
+          card.append(image, title, description);
+          gallery.append(card);
+        }
+        status.remove();
+      } catch (error) {
+        console.error(error);
+        status.textContent = "Галерея временно недоступна.";
+      }
+    }
+    loadGallery();
+  </script>
+</body>
+</html>
